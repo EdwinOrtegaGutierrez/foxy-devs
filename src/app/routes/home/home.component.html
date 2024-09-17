@@ -1,0 +1,37 @@
+<main class="main-content">
+    <header class="header">
+        <img src="/logo.jpg" alt="Foxy Devs Logo" width="50" class="logo">
+        <h1 class="site-title">Foxy Devs</h1>
+        <hr class="hr-title">
+    </header>
+
+    <div class="sections">
+        <app-card-info 
+            title="Specialized" 
+            description="Our expertise spans several key areas, including:"
+            [infoList]="softwareArch"
+        />
+        <app-card-info 
+            title="Purpose" 
+            description="Resolve issues through efficient software implementations, 
+            tailoring each solution to the specific approach required by 
+            each company to optimize their business."
+            style="width: 450px;"
+        />
+        <app-card-info 
+            title="Why Choose Us" 
+            description="Reasons to choose our services:"
+            [infoList]="chooseUs"
+        />        
+        <app-card-info 
+        title="Stack" 
+        description="We work with a comprehensive stack to ensure the highest quality of software."
+        [infoList]="elementsList"
+        />
+        <app-card-info 
+        title="Advantages" 
+        description="Here are some of our advantages:"
+        [infoList]="infoList"
+        />
+    </div>
+</main>

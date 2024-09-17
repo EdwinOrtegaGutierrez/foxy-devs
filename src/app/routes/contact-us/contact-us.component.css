@@ -1,0 +1,67 @@
+.main-content{
+    display: flex;
+    width: 100vw;
+    height: 74vh;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background: linear-gradient(10deg, var(--pink)0%, var(--black)30%);
+    border-radius: 25px;
+    padding: 30px;
+    width: fit-content;
+    .contact-form{
+        padding: 30px;
+        .form-group{
+            margin-bottom: 20px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            flex-shrink: 1;
+            gap: 20px;
+            flex-basis: content;
+            align-items: center;
+            justify-content: center;
+            .form-label{
+                font-weight: 500;
+                width: 100px;
+                padding: 5px;
+                display: block;
+            }
+        }
+    }
+}
+.site-title {
+    font-size: 5rem;
+    padding-bottom: 10px;
+    background: linear-gradient(45deg, var(--pink), var(--orange));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+
+.icon{
+    border: none;
+    background-color: var(--white);
+    padding: 1px 1px;
+    &.circle{
+        border-radius: 35px;
+    }
+    &.youtube:hover{
+        background-color: var(--pink);
+    }
+    &.tiktok:hover{
+        
+        background: linear-gradient(120deg, var(--aqua) 25%, var(--pink));
+    }
+    &.insta:hover{
+        background: linear-gradient(45deg, var(--yellow)0%, var(--orange)25%, var(--pink)50%, var(--purple)100%);
+    }
+    &.facebook:hover{
+        background-color: var(--blue);
+        
+    }
+    
+}

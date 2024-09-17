@@ -1,0 +1,36 @@
+.navbar {
+    padding: 10px 5px;
+    display: flex;
+    background-color: transparent;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px;
+    & img {
+        width: 70px;
+        border-radius: 35px;
+        margin-left: 25px;
+        cursor: pointer;
+    }
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center; 
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        & img {
+            margin-bottom: 5px;
+        }
+    }
+
+}

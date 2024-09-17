@@ -1,0 +1,33 @@
+.btn {
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 20px;
+    border: 0 none;
+    color: var(--white);
+    cursor: pointer;
+    &.red{
+        background-color: var(--red);
+    }
+    &.green{
+        background-color: var(--green);
+    }
+    &.yellow{
+        background-color: var(--yellow);
+        color: var(--black) ;
+    }
+    &.orange{
+        background: linear-gradient(40deg, var(--pink) 0%, var(--orange)70%);
+    }
+    &.white{
+        background-color: var(--white);
+    }
+    &:hover{
+        opacity: 80%;
+    }
+    &:active{
+
+        transform: scale(0.97); /* Reduce un poco el tamaño para un efecto de "presionado" */
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); 
+    }
+}

@@ -1,0 +1,70 @@
+<section class="section">
+    <h2 class="section-title">{{title}}</h2>
+    <hr class="hr-section">
+    @if(description){
+        <p class="section-description">
+            {{description}}
+        </p>
+    }
+    @if(infoList){
+        <ul class="info-list">
+            @for (info of infoList; track $index) {
+                <li class="info-item">
+                    <strong class="info-title">{{info.title}}</strong>
+                    @if (info.description) {
+                        <p class="info-description">{{info.description}}</p>
+                    }
+                    @if(info.img){
+                        <div class="imgs">
+                            @for (img of info.img; track $index) {
+                                <img src="/svg/{{img}}.svg" alt="{{img}} Logo" width="80" class="icon">
+                            }
+                        </div>
+                    }
+                </li>
+            }
+        </ul>
+    }
+    
+    <!-- @if(elementsList){
+        <div class="carousel-wrapper">
+            <div class="section-list-items">
+                <p class="section-list-title">{{elementsList[currentIndex].titleElement}}</p>
+                <ul class="list-items">
+                    @for (icon of elementsList[currentIndex].icons; track $index) {
+                        <li class="item">
+                            <img src="/svg/{{icon}}.svg" alt="{{icon}} Logo" width="100" class="icon">
+                        </li>
+                    }
+                </ul>
+            </div>
+            <div class="controls">
+                <app-btn text="❮" class="btn yellow" (click)="prevSlide()"></app-btn>
+                <app-btn text="❯" class="btn yellow" (click)="nextSlide()"></app-btn>
+            </div>
+        </div>
+    }
+    
+
+    @if(infoList){
+        <div class="section-list-items">
+            <ul class="list-items">
+                <li class="item-text">
+                    @if (infoList[currentIndex].title) {
+                        <p class="section-list-title">{{infoList[currentIndex].title}}</p>
+                    }
+                    @if (infoList[currentIndex].description){
+                        <p class="section-list-description">
+                            {{infoList[currentIndex].description}}
+                        </p>
+                    }
+                </li>
+            </ul>
+        </div>
+        <div class="controls">
+            <app-btn text="❮" class="btn yellow" (click)="prevInfo()"></app-btn>
+            <app-btn text="❯" class="btn yellow" (click)="nextInfo()"></app-btn>
+        </div>
+    } -->
+
+</section>

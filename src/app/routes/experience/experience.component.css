@@ -1,0 +1,16 @@
+.main-content{
+    display: flex;
+    width: 100vw;
+    height: 74vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-title {
+    font-size: 5rem;
+    padding-bottom: 10px;
+    background: linear-gradient(45deg, var(--pink), var(--orange));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}

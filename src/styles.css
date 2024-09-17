@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --dark-bg:#111;
+    --white-text:#f1f1f1;
+
+    /** Colors */
+    --green:#97F294;
+    --light-green:#04D9B2;
+    --aqua:#69C9D0;
+    --blue:#1877F2;
+    --pink: #EE1D52;
+    --yellow:#F2D64B;
+    --purple:#8a3ab9;
+    --orange:#F2B749;
+    --red:#F24B4B;
+    --white:#fff;
+    --black:#151C26;
+}
+
+/* Estilo para la barra de desplazamiento en WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 6px; /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; /* Color de fondo de la pista */
+    border-radius: 12px; /* Redondeo opcional para la pista */
+    height: 40px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444; /* Color del pulgar (la parte que arrastras) */
+    border-radius: 12px;
+    height: 40px; /* Ajusta la altura del pulgar según lo necesario */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #666; /* Color del pulgar cuando se pasa el ratón por encima */
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    color: var(--white-text);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--dark-bg);
+}
